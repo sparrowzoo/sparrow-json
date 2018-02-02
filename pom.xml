@@ -30,13 +30,13 @@
     <artifactId>sparrow-json</artifactId>
     <dependencies>
         <dependency>
-            <groupId>javax.json</groupId>
-            <artifactId>javax.json-api</artifactId>
+            <groupId>com.sparrow</groupId>
+            <artifactId>sparrow</artifactId>
+            <version>${sparrow_version}</version>
         </dependency>
         <dependency>
-            <groupId>com.sparrow</groupId>
-            <artifactId>sparrow-context</artifactId>
-            <version>${sparrow_context_version}</version>
+            <groupId>javax.json</groupId>
+            <artifactId>javax.json-api</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
