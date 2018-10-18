@@ -63,6 +63,11 @@ public class SparrowJsonImpl implements Json {
     }
 
     @Override
+    public <T> T parse(String json, Class... clazz) {
+        throw new UnsupportedOperationException("sorry todo !");
+    }
+
+    @Override
     public <T> List<T> parseList(String json, Class<T> clazz) {
         return JSON.parseArray(json, clazz);
     }
