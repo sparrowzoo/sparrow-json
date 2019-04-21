@@ -18,7 +18,7 @@
 package com.sparrow.json.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.sparrow.constant.CONSTANT;
+import com.sparrow.protocol.constant.CONSTANT;
 import com.sparrow.json.Json;
 import com.sparrow.protocol.Entity;
 import org.slf4j.Logger;
