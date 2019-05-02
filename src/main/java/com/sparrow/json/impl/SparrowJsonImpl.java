@@ -20,7 +20,7 @@ package com.sparrow.json.impl;
 import com.alibaba.fastjson.JSON;
 import com.sparrow.protocol.constant.CONSTANT;
 import com.sparrow.json.Json;
-import com.sparrow.protocol.Entity;
+import com.sparrow.protocol.POJO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,7 +34,7 @@ public class SparrowJsonImpl implements Json {
     private static Logger logger = LoggerFactory.getLogger(SparrowJsonImpl.class);
 
     @Override
-    public String toString(Entity model) {
+    public String toString(POJO model) {
         return JSON.toJSONString(model);
     }
 
