@@ -24,6 +24,7 @@ import com.sparrow.protocol.POJO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -47,7 +48,7 @@ public class SparrowJsonImpl implements Json {
     }
 
     @Override
-    public <T> String toString(List<T> models) {
+    public <T> String toString(Collection<T> models) {
         return JSON.toJSONString(models);
     }
 
@@ -63,10 +64,6 @@ public class SparrowJsonImpl implements Json {
         return JSON.parseObject(json, clazz);
     }
 
-    @Override
-    public <T> T parse(String json, Class... clazz) {
-        throw new UnsupportedOperationException("sorry todo !");
-    }
 
     @Override
     public <T> List<T> parseList(String json, Class<T> clazz) {
